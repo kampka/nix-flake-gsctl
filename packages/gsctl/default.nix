@@ -2,7 +2,7 @@
 
 pkgs.buildGoModule rec {
   pname = "gsctl";
-  version = "0.29.0";
+  version = "1.1.0";
 
   vendorSha256 = "sha256-lZgHrQYqoyoM1Iv6vCqTMcv62zSKyxaAsq56kUXHrIA=";
 
@@ -12,10 +12,8 @@ pkgs.buildGoModule rec {
     owner = "giantswarm";
     repo = pname;
     rev = version;
-    sha256 = "sha256-2dLbJF30CNyGQaSuuW+Im1FX2wczE8GyseEKWU9hvGU=";
+    sha256 = "sha256-wOMndMPF/TykkEKrDmohaowUM5gtk/lITsHUyT1ahDU=";
   };
-
-  patches = [ ./0001-Enable-config-dir-setting-via-env-variable.patch ];
 
   meta = with pkgs.lib; {
     description = "The Giant Swarm command line interface";
