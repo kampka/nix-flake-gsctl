@@ -2,7 +2,7 @@
 
 pkgs.buildGoModule rec {
   pname = "gsctl";
-  version = "1.1.0";
+  version = "1.1.4";
 
   vendorSha256 = "sha256-lZgHrQYqoyoM1Iv6vCqTMcv62zSKyxaAsq56kUXHrIA=";
 
@@ -12,7 +12,7 @@ pkgs.buildGoModule rec {
     owner = "giantswarm";
     repo = pname;
     rev = version;
-    sha256 = "sha256-wOMndMPF/TykkEKrDmohaowUM5gtk/lITsHUyT1ahDU=";
+    sha256 = "sha256-uCNWgaLZMm1vPxFduj8mpjKYuYlp1ChF6bK+bmAWy50=";
   };
 
   meta = with pkgs.lib; {
